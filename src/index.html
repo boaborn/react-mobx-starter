@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>React Mobx Starter</title>
+  </head>
+  <body>
+    <div id="app" class="app-container"></div>
+    <!-- Daily Cache Break -->
+    <script>
+      function cacheBreak(path, next) {
+        var parent = document.getElementsByTagName("script")[0];
+        var script = document.createElement("script");
+        script.src = path + '?v=' + Math.floor(Date.now() / 86400000);
+        script.async = false;
+        script.defer = true;
+        parent.parentNode.insertBefore(script, parent);
+        if (typeof next === 'function')
+          next();
+      }
+      // cacheBreak('/config/config.js', function() {
+        cacheBreak('/main.min.js')
+      // });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+.tags*
+node_modules
+*debug*.log
+*DS_Store
+coverage
+node
+src/main.min.js
+src/react.main.min.js
+target
+config.json
+src/export.min.js
+.npm
+.localnotes
+
+

@@ -1,0 +1,62 @@
+{
+  "name": "react-mobx-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "dev": "webpack-dev-server --content-base src --inline --hot --https --host 0.0.0.0 --port 8888 --progress",
+    "build": "NODE_ENV=production webpack -p --config ./webpack.config.js --progress",
+    "builddev": "NODE_ENV=development webpack -p --config ./webpack.config.js --progress",
+    "watch": "npm run builddev -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:boaborn/react-mobx-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-react-html-attrs": "^2.1.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2016": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "mobx": "^4.2.0",
+    "mobx-react": "^5.1.2",
+    "morgan": "^1.9.0",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.3.2",
+    "style-loader": "^0.21.0",
+    "superagent": "^3.8.3",
+    "webpack": "^4.8.3",
+    "webpack-dev-server": "^3.1.4",
+    "xml-js": "^1.6.2"
+  },
+  "devDependencies": {
+    "bluebird": "^3.5.1",
+    "chai": "^4.1.2",
+    "compression": "^1.7.2",
+    "cors": "^2.8.4",
+    "eslint": "^4.17.0",
+    "eslint-config-google": "^0.9.1",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-chai-expect": "^1.1.1",
+    "eslint-plugin-react": "^7.7.0",
+    "mocha": "^5.1.1"
+  }
+}
